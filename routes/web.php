@@ -12,5 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+
+
+Route::group(['middleware' => 'auth'], function () {
+
+    // Super User
+    Route::group(['middleware' => 'checkAdmin'], function () {
+
+        Route::resource('category', 'CategoryController', []);
+
+
+    });
+
+    // Normal User
+
 });
