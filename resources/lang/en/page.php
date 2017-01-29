@@ -2,7 +2,7 @@
 
 return [
 
-    'title' => 'My Task',
+    'page_title' => 'My Task',
     'home' => 'Home',
     // admin
     'manage' => 'Management',
@@ -34,7 +34,14 @@ return [
     'delete_message' => 'You are going to delete action.',
 
 
-
+    'title' => 'Title',
     'article' => 'Articles',
     'product' => 'Products',
+    'category' => 'Category',
+    'body' => 'Article Body',
+
+    'select_category' => 'Select Category',
+    'excerpt' => 'Excerpt',
+    'keywords' => 'Keywords',
+    'keywords_helper' => 'You can separate keywords by comma(,) .',
 ];

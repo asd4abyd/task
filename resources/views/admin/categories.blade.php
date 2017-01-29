@@ -31,6 +31,7 @@
             });
         });
     </script>
+
     <div class="row">
         <div class="col-md-offset-2 col-md-8">
             <div class="panel panel-info">
@@ -48,13 +49,13 @@
                         </div>
                     @endif
 
-                    <form action="{{ url('category') }}" method="post" class="form-horizontalr">
+                    <form action="{{ url('category') }}" method="post" class="form-horizontal">
                         {{ csrf_field() }}
                         <input type="hidden" name="type" value="{{ $type }}">
 
                         <div class="form-group">
                             <div class="row">
-                                <label class="control-label col-sm-4">{{ trans('page.add_category') }} - {{ trans('page.en') }}</label>
+                                <label class="control-label col-sm-4">{{ trans('page.category') }} - {{ trans('page.en') }}</label>
                                 <div class="col-md-8">
                                     <input class="form-control" type="text" maxlength="100" name="name-en" />
                                 </div>
@@ -62,7 +63,7 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <label class="control-label col-sm-4">{{ trans('page.add_category') }} - {{ trans('page.ar') }}</label>
+                                <label class="control-label col-sm-4">{{ trans('page.category') }} - {{ trans('page.ar') }}</label>
                                 <div class="col-md-8">
                                     <input class="form-control" type="text" maxlength="100" name="name-ar" />
                                 </div>
@@ -70,7 +71,7 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-offset-4 col-md-8">
                                     <button class="btn btn-primary" type="submit">{{ trans('page.add_new') }}</button>
                                 </div>
                             </div>

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ trans('page.title') }}</title>
+    <title>{{ trans('page.page_title') }}</title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -58,14 +58,14 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ trans('page.manage') }} <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#about">{{ trans('page.content_manage') }}</a></li>
+                                <li><a href="{{ url('content') }}">{{ trans('page.content_manage') }}</a></li>
                                 <li><a href="#about">{{ trans('page.products_manage') }}</a></li>
                                 <li><a href="#about">{{ trans('page.users_manage') }}</a></li>
                                 <li><a href="#about">{{ trans('page.orders_manage') }}</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li class="dropdown-header">{{ trans('page.category_manage') }}</li>
-                                <li><a href="/category/article">   - {{ trans('page.articles') }}</a></li>
-                                <li><a href="/category/product">   - {{ trans('page.products') }}</a></li>
+                                <li><a href="{{ url('category/article') }}">   - {{ trans('page.articles') }}</a></li>
+                                <li><a href="{{ url('category/product') }}">   - {{ trans('page.products') }}</a></li>
                             </ul>
                         </li>
 

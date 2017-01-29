@@ -27,6 +27,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['middleware' => 'checkAdmin'], function () {
 
         Route::resource('category', 'CategoryController', []);
+        Route::get('content/add', 'ContentController@addNew', []);
+        Route::resource('content', 'ContentController', []);
 
 
     });

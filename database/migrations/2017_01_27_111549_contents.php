@@ -21,9 +21,9 @@ class Contents extends Migration
             $table->string('title_ar', 100);
             $table->text('body_en');
             $table->text('body_ar');
-            $table->string('excerpt_en', 200);
-            $table->string('excerpt_ar', 200);
-            $table->string('keywords');
+            $table->string('excerpt_en', 200)->nullable();
+            $table->string('excerpt_ar', 200)->nullable();
+            $table->string('keywords')->nullable();
             $table->timestamps();
         });
     }
