@@ -2,8 +2,17 @@
 
 return [
 
+
+
+
+
     'page_title' => 'My Task',
     'home' => 'Home',
+    'meta_description' => 'this is my task description',
+    'meta_keyword' => 'keyword1, keyword2, keyword3',
+
+
+
     // admin
     'manage' => 'Management',
     'content_manage' => 'Content',
@@ -25,6 +34,7 @@ return [
     'en' => 'English',
     'ar' => 'Arabic',
 
+
     'delete' => 'Delete',
     'edit' => 'Edit',
     'save' => 'Save',
@@ -40,6 +50,7 @@ return [
     'category' => 'Category',
     'body' => 'Article Body',
 
+    'all_articles' => 'All Articles',
     'select_category' => 'Select Category',
     'excerpt' => 'Excerpt',
     'keywords' => 'Keywords',

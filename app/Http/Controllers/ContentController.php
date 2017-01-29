@@ -14,7 +14,7 @@ class ContentController extends Controller
 
     public function index() {
 
-        $content = Content::with('category')->paginate(10);
+        $content = Content::orderBy('id', 'desc')->with('category')->paginate(20);
 
         return view('admin.content.show', ['articles' => $content, 'locale' => App::getLocale()]);
     }
